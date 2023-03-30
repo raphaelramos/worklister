@@ -1,0 +1,17 @@
+.user-login {
+    margin-top: 10px;
+    color: #a18aff;
+    display: flex;
+}
+
+hr {
+    border: 1px solid #a18aff;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo-header {
+    width: 80px !important;
+}

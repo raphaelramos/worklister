@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Delete {{data.name}}? </h1>
+<div mat-dialog-content>
+    <p>Write <strong>delete</strong> in the field below and confirm</p>
+    <mat-form-field class="margin w-full">
+        <input matInput [(ngModel)]="delete_text" placeholder="Write here" type="text">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>Cancel</button>
+    <button mat-button [mat-dialog-close]="'confirmed'" [disabled]="toLowerCase(delete_text) !== 'delete'">Confirm</button>
+</div>

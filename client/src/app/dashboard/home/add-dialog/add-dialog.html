@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Add item </h1>
+<div mat-dialog-content>
+    <p>Write the new item</p>
+    <mat-form-field class="margin">
+        <input matInput [(ngModel)]="item" placeholder="Description" type="text">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>Cancel</button>
+    <button mat-button [mat-dialog-close]="item" [disabled]="!item">Save</button>
+</div>

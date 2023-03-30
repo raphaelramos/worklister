@@ -1,0 +1,120 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+/* size menu */
+mat-sidenav {
+  width: 284px;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of list that may no longer apply for the MDC version. */
+mat-list-item {
+  padding-left: 10px;
+}
+
+.mat-sidenav {
+  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2), 0 2px 3px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+/* hide text not found auto-complete */
+.ngui-auto-complete li.no-match-found {
+  display: none !important;
+}
+
+.content {
+  padding: 12px;
+}
+
+.user-header {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.text-top {
+  font-size: 15px;
+}
+
+.active {
+  border-right: 3px solid #ad99ff;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.layout-is-mobile .layout-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.layout-app-name {
+  margin-left: 8px !important;
+  margin-top: 10px !important;
+}
+
+mat-sidenav-content {
+  padding: 8px;
+  padding-bottom: 25px;
+}
+
+.layout-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.layout-is-mobile .layout-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of list that may no longer apply for the MDC version. */
+.mat-list-item-content {
+  height: auto !important;
+}
+
+.column-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.radio-button {
+  margin: 5px;
+}
+
+/* Material Design Bottom buttom */
+.fab-bottom-right {
+  position: fixed !important;
+  display: inline;
+  bottom: 30px;
+  right: 30px;
+}
+
+.mat-mdc-paginator-container {
+  justify-content: flex-start !important;
+}
+
+/* Scroolbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(142, 142, 142, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  display: none;
+}

@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300";
+@import 'css/layouts.css';
+
+@tailwind base;
+@tailwind utilities;
+/* @tailwind components; */
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-sidenav-content {
+  background-color: #ad99ff;
+}
+
+.search-header {
+  padding: 8px 0px 0;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-row {
+  margin-top: 5px;
+}
+
+mat-row:hover {
+  background-color: #ad99ff;
+}
+
+.mat-mdc-card-title {
+  font-weight: 500;
+}
+
+.content {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  width: 100% !important;
+}
+
+.margin {
+  margin: 15px 0px !important;
+}
+
+.password {
+  -webkit-text-security: disc;
+}
+
+.pointer {
+  cursor: pointer !important;
+}

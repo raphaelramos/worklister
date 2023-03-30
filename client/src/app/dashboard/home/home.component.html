@@ -1,0 +1,15 @@
+<div class="margin">
+  <p *ngIf="list.length === 0">No registrations</p>
+  <mat-card *ngFor="let item of list" class=" py-5 margin" appearance="outlined">
+    <mat-card-header class="flex justify-between">
+      <mat-card-title> {{ item.description }} </mat-card-title>
+      <mat-icon (click)="deleteItem(item.id, item.description)" class="pointer delete-icon">
+        delete
+      </mat-icon>
+    </mat-card-header>
+  </mat-card>
+</div>
+
+<button (click)="addItem()" color="accent" mat-fab class="fab-bottom-right" matTooltip="Add" matTooltipPosition="above" aria-label="Add">
+  <mat-icon>add</mat-icon>
+</button>
